@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Registration</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-decorations">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div id="hero-section" class="hero-section"></div>
+
+    <div class="container">
+        <div id="view-1" class="view active">
+            <div class="action-section">
+                <button id="btn-start-register" class="btn primary-btn">Register</button>
+            </div>
+        </div>
+
+        <!-- View 2: Form -->
+        <div id="view-2" class="view">
+            <div class="form-section" id="form-section">
+                <form id="registration-form">
+                    <input type="text" name="honeypot" class="honeypot" style="display:none;">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" id="btn-submit-form" class="btn primary-btn">Continue</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="view-3" class="view">
+            <div class="title-section">
+                <h2>Security Check</h2>
+                <p>Please confirm you are a human to complete registration.</p>
+            </div>
+            <div class="action-section">
+                <div class="captcha-container">
+                    <button id="btn-captcha" class="btn captcha-btn">
+                        <div class="checkbox-box"></div>
+                        <span>I'm not a robot</span>
+                    </button>
+                </div>
+                
+                <div id="result-message" class="hidden">
+                    <p>Verifying...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tracker.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
