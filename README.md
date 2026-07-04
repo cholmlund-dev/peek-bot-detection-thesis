@@ -1,6 +1,8 @@
 # Katt och Råtta i Webbläsaren
 **Avvägningen mellan bot-detektion och användarens personliga integritet**
 
+🔗 **[Läs hela examensarbetet på DiVA Portal](http://www.diva-portal.org/smash/record.jsf?pid=diva2:2082795)**
+
 Detta repository innehåller den praktiska prototypen och testmiljön för examensarbetet med ovanstående titel, skapat av **Jakob Fransson** och **Carl Holmlund**. 
 
 Syftet med koden är att demonstrera den iterativa "katt-och-råtta"-leken mellan bot-detektionssystem (CAPTCHA) och automatiserade skript (bottar). Genom tre versioner (V1, V2 och V3) illustreras hur beteendebaserad analys och teknisk profilering kan användas för att identifiera bottar, samt hur dessa detektionsmekanismer kan kringgås av en anpassningsbar angripare.
@@ -60,3 +62,5 @@ Varje version körs helt fristående från de andra. För att testa ett scenario
 
 5. **Granska Resultatet:**
    När sessionen är slutförd, titta i terminalen där `server.js` körs. Systemet skriver ut en utförlig "SESSION ANALYSIS" som visar poängsättningen, vilka kontroller som triggades, och det slutgiltiga beslutet (HUMAN eller BOT DETECTED).
+
+   
